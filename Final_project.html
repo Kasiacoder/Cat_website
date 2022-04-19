@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats</title>
+    <style>
+      body {
+        background: #f8e2cf;
+      }
+
+      h1 {
+        text-align: center;
+        color: #742d62;
+        font-size: 56px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #742d62;
+        font-size: 38px;
+        border: 1px solid #d885a3;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+
+      p {
+        margin: 20px auto;
+        line-height: 1, 5;
+        color: #742d62;
+        font-size: 18px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #742d62;
+        color: white;
+        padding: 20px 30px;
+        font-size: 20px;
+        border: 1px solid #742d62;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #f3f0d7;
+        color: #742d62;
+        cursor: pointer;
+        opacity: 0, 9;
+      }
+
+      .learn-more {
+        text-align: center;
+        display: block;
+        color: #742d62;
+      }
+      .footer {
+        text-align: center;
+        display: block;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>😻 Cats are cute 🐈</h1>
+      <h2><strong>Adopt a Cat!</strong></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/104/original/cat.gif?1645813902
+    "
+        alt="Cats"
+        width="600"
+      />
+      <p>
+        Ask any cat person, and they’ll tell you why their cat is the cutest.
+        For instance, my cat Margot has the softest, fluffiest fur, and the
+        prettiest, roundest green eyes, and she makes the most adorable little
+        mewing noises for attention. She’s just sooo cute! But it turns out,
+        there’s a reason those particular features make me ga-ga for her.Beyond
+        the classic “characteristics of cute,” we humans and our brains can see
+        cuteness in all sorts of features. It may simply be that we naturally
+        assume smaller creatures need more care. Or maybe we’re just conditioned
+        to think of cats as cute. Personal taste comes into play, too. After
+        all, some people have different cuteness cues than others; it explains
+        why some of us prefer smush-faced cat breeds and others go for sleek,
+        pointy-eared cats.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Cat "
+        target="_blank"
+        class="learn-more"
+      >
+        Read more about Cats !
+      </a>
+      <br />
+      <button>Adopt Cat!</button>
+      <p class="footer">
+        <em>This page was buil by 👩‍🦰<strong>Kasia Kopec</strong></em>
+      </p>
+    </div>
+    <script>
+      function adopt() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+
+        alert("Thank you, " + name + " That's beautiful you like Cats !🥰");
+      }
+      let adoptButton = document.querySelector("button");
+      adoptButton.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
